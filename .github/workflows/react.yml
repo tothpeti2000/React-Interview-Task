@@ -33,6 +33,3 @@ jobs:
       
     - name: Install backend dependencies    
       run: cd ./solution-backend && npm ci
-      
-    - name: Run tests
-      run: cd ./solution-frontend && npm test
