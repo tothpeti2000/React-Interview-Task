@@ -27,7 +27,6 @@ jobs:
       uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
-        cache: 'npm'
         
     - name: Install frontend dependencies    
       run: cd ./solution-frontend && npm ci
