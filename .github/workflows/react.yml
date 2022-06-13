@@ -34,10 +34,10 @@ jobs:
         run: cd ./solution-frontend && npm ci
 
       - name: Build
-        run: npm run build
+        run: cd ./solution-frontend && npm run build
 
       - name: Run tests
-        run: npm test
+        run: cd ./solution-frontend && npm test
 
   sonarcloud:
     name: SonarCloud
